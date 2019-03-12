@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Primer Formulario html</title>
+</head>
+<body>
+<h1>Primer Formulario HTML</h1>
+<form name="frmUsuario" method="post" action="guardar.php">
+<table>
+<tr>
+	<td>Nombre</td>
+	<td><input type="text" name="txtNombre" id="txtNombre" maxlength="100"/></td>
+</tr>
+<tr>
+	<td>Fecha</td>
+	<td><input type="date" name="txtFecha" id="txtFecha"/></td>
+</tr>
+<tr>
+	<td>Sexo</td>
+	<td><input type="radio" name="sx" value="F" checked> Femenino 
+	<input type="radio" name="sx" value="M"> Masculino
+	</td>
+</tr><tr>
+	<td>Permisos</td>
+	<td><input type="checkbox" name="insertar" value="I"/> Insertar
+		<input type="checkbox" name="borrar" value="D"/> Borrar
+		<input type="checkbox" name="modificar" value="U"/> Modificar
+	</td>
+</tr><tr>
+	<td>región</td>
+	<td>
+		<select name="ddlRegion" id="ddlRegion">
+			<option value="RM">Región Metropolitana</option>
+			<option value="VI">Región OHiggins</option>
+			<option value="VII">Región del Maule</option>
+			<option value="VIII">Región del Bío Bío</option>
+		</select>
+	</td>
+</tr><tr>
+	<td><input type="submit" value="Grabar"></td>
+	<td></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
